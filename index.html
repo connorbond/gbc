@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Gameboy | i.e. Connor got bored.</title>
+	<meta name="author" content="Connor Bond">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="_client/styles/gb.css">
+	<!--<link rel="stylesheet" href="_client/styles/screen.css">-->
+	<!-- ^ Where the real magic happens ^ -->
+</head>
+<body>
+	<!-- Probably awful markup, but the output looks cool, eh? -->
+	<div class="gbc float">
+		<div class="grip"></div>
+		<div class="display"></div>
+		<div class="power" id="pwr"></div>
+		<div class="boot" id="boot"><img src="_client/img/boot.gif" width="90px"/></div>
+		<div class="logo"><img src="_client/img/logo.svg"/></div>
+		<div class="nin">Nintendo</div>
+		<div class="dPad">
+			<div class="u"></div>
+			<div class="d"></div>
+			<div class="l"></div>
+			<div class="r"></div>
+		</div>
+		<div class="btn a" onclick="powerOn()">A</div>
+		<div class="btn b" onclick="powerOff()">B</div>
+		<div class="start"></div>
+		<div class="select"></div>
+		<div class="speaker"></div>
+	</div>
+	<div class="shadow shrink"></div>
+	
+	<div class="msg">
+		<h3>Pure CSS Gameboy</h3>
+		<p>Floaty floaty float...</p>
+		<p class="note">(Yes, the logo is an .svg. But stuff that.)</p>
+		<p class="note"><strong>CB.</strong></p>
+	</div>
+	
+	<audio id="bing" src="_client/audio/bing.mp3" preload="auto"></audio>
+	<script src="_client/scripts/scripts.js"></script>
+</body>
+</html>
