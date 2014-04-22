@@ -1,0 +1,341 @@
+$body-color: #503E89;
+$body-light: #5B3D92;
+
+body {
+  background: #EEE;
+	user-select: none;
+	font-family: Arial, sans-serif;
+}
+
+p {
+	margin: 5px;
+}
+
+.gbc {
+  position: relative;
+  margin: 20px auto 0 auto;
+  height: 250px;
+  width: 150px;
+  background: #503E89;
+  border-radius: 8px 8px 25px 25px;
+}
+
+	.gbc:before{
+		position: absolute;
+		top: 32px;
+		left: 20px;
+		height: 200px;
+		width: 110px;
+		background: #5B3D92;
+		border-radius: 8px 8px 22px 22px;
+		content: "";
+	}
+	
+.grip {
+	position: absolute;
+  width: 3px;
+  height: 3px;
+  left: -1px;
+  top: 20px;
+  background: #503E89;
+	box-shadow: 0px 10px #503E89, 0px 20px #503E89, 0px 30px #503E89,
+							149px 0px #503E89, 149px 10px #503E89, 149px 20px #503E89, 149px 30px #503E89;
+}
+		
+.display { /* Surround */
+  position: absolute;
+  width: 134px;
+  height: 118px;
+  left: 8px;
+  top: 10px;
+  background: #1F1F1F;
+  border-radius: 5px 5px 20px 20px
+}
+
+	.display:before { /* Screen */
+		position: absolute;
+		width: 86px;
+		height: 78px;
+		top: 13px;
+		left: 22px;
+		background: #3C3C3C;
+		border-top: 2px solid #303030;
+		border-left: 1px solid #3F3F3F;
+		border-right: 1px solid #3F3F3F;
+		border-bottom: 1px solid #3F3F3F;
+		content: "";
+	}
+	
+	.display:after {
+		position: absolute;
+		top: 30px;
+		left: 4px;
+		content: "Power";
+		color: white;
+		font-size: 5px;
+		line-height: 380%;
+	}
+	
+.power { /* Power light */
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	top: 40px;
+	left: 12px;
+	border-radius: 100%;
+	background: #444;
+}
+	
+.boot {
+	position: absolute;
+	z-index: 9999;
+  top: 23px;
+  left: 30px;
+	display: none;
+}
+	
+.logo {
+	position: absolute;
+  height: 10px;
+  width: 50px;
+	z-index: 9999;
+  top: 105px;
+  left: 34px;
+}
+	
+.nin {
+  position: absolute;
+  height: 10px;
+  width: 50px;
+  top: 136px;
+  left: 48px;
+	border-radius: 10px;
+  border: 2px solid #503E89;
+	color: #503E89;
+	text-align: center;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 100%;
+}
+	
+.dPad {
+  position: absolute;
+  width: 13px;
+  height: 40px;
+  top: 155px;
+  left: 28px;
+  background: #444;
+  border-radius: 3px;
+  z-index: 998;
+}
+
+	.dPad:after {
+		position: absolute;
+		width: 40px;
+		height: 13px;
+		top: 13px;
+		left: -13px;
+		background: #444;
+		border-radius: 3px;
+		content: "";
+		z-index: 999;
+	}
+	
+	.dPad:before {
+		position: absolute;
+		height: 8px;
+		width: 8px;
+		top: 15px;
+		left: 3px;
+		border-radius: 100%;
+		background: #333;
+		content: "";
+		z-index: 1000;
+	}
+	
+	.u {
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 0; 
+		height: 0; 
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-bottom: 4px solid #333;
+	}
+	
+	.d {
+		position: absolute;
+		top: 32px;
+		left: 3px;
+		width: 0; 
+		height: 0; 
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 4px solid #333;
+	}
+	
+	.l {
+		position: absolute;
+		top: 15px;
+		left: -10px;
+		width: 0; 
+		height: 0; 
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent; 
+		border-right: 4px solid #333; 
+		z-index: 9999;
+	}
+	
+	.r {
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		width: 0; 
+		height: 0; 
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent; 
+		border-left: 4px solid #333; 
+		z-index: 9999;
+	}
+	
+.btn {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #444;
+	color: #333;
+	text-align: center;
+	font-size: 8px;
+	font-weight: bold;
+	line-height: 250%;
+}
+
+	.btn:hover {
+		background: #333;
+		color: #222;
+		cursor: pointer;
+	}
+
+	.a {
+		top: 160px;
+		right: 15px;
+	}
+	
+	.b {
+		top: 170px;
+		right: 40px;
+	}
+
+.start {
+  position: absolute;
+  height: 6px;
+  width: 14px;
+  bottom: 30px;
+  left: 78px;
+	border-radius: 5px;
+  background: #444;
+}
+
+	.select {
+		position: absolute;
+		height: 6px;
+		width: 14px;
+		bottom: 30px;
+		left: 58px;
+		border-radius: 5px;
+		background: #444;
+	}
+	
+.hov:hover {
+	background: #333;
+	color: #222;
+	cursor: pointer;
+}
+
+.speaker {
+	position: absolute;
+	height: 3px;
+	width: 4px;
+	bottom: 32px;
+	right: 32px;
+	background: #3D2572;
+	border-radius: 2px;
+	-moz-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	box-shadow: 7px 0px #3D2572, 14px 0px #3D2572,
+							-3px 5px #3D2572, 4px 5px #3D2572, 11px 5px #3D2572, 18px 5px #3D2572,
+							0px 10px #3D2572, 7px 10px #3D2572, 14px 10px #3D2572,
+							-3px 15px #3D2572, 4px 15px #3D2572, 11px 15px #3D2572, 18px 15px #3D2572,
+							0px 20px #3D2572, 7px 20px #3D2572, 14px 20px #3D2572;
+}
+
+
+.shadow {
+	position: relative;
+  margin: 20px auto;
+  height: 20px;
+  width: 160px;
+  background: #999;
+  border-radius: 100%;
+}
+
+.msg {
+	width: 100%;
+	text-align: center;
+}
+
+	.note {
+		font-size: 10px;
+		color: #555;
+	}
+
+
+/* ANIMATION */
+
+.float {
+    -moz-animation-name: float;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+		-webkit-animation-name: float;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+   
+	@-moz-keyframes float {
+			from {-moz-transform: translate(0, 0px);}
+			65% {-moz-transform: translate(0, 15px);}
+			to {-moz-transform: translate(0, -0px);}    
+	}
+
+	@-webkit-keyframes float {
+			from {-webkit-transform: translate(0, 0px);}
+			65% {-webkit-transform: translate(0, 15px);}
+			to {-webkit-transform: translate(0, -0px);}    
+	}
+
+.shrink {
+    -moz-animation-name: shrink;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+		-webkit-animation-name: shrink;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+   
+	@-moz-keyframes shrink {
+			from {-moz-transform: scale(0.9); opacity: 0.4;}
+			65% {-moz-transform: scale(1.0); opacity: 0.9;}
+			to {-moz-transform: scale(0.9); opacity: 0.4;}    
+	}
+	
+	@-webkit-keyframes shrink {
+			from {-webkit-transform: scale(0.9); opacity: 0.4;}
+			65% {-webkit-transform: scale(1.0); opacity: 0.9;}
+			to {-webkit-transform: scale(0.9); opacity: 0.4;}    
+	}

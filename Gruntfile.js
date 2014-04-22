@@ -34,7 +34,7 @@ module.exports = function(grunt){
                 	style: 'expanded'
                 },
                 files: {
-                    'screen.css': 'screen.scss'
+                    '_client/styles/screen.css': 'screen.scss'
                 }
             }
         },
@@ -44,8 +44,8 @@ module.exports = function(grunt){
                 options: {
                     browsers: ['last 2 version']
                 },
-                src: 'screen.css',
-                dest: 'screen.css'
+                src: '_client/styles/screen.css',
+                dest: '_client/styles/screen.css'
             }
         }
 
