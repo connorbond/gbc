@@ -29,9 +29,10 @@ module.exports = function(grunt){
 		},
 
 		gitcommit: {
-			your_target: {
+			gbc: {
 				options: {
-					message: 'Testing'
+					message: 'Testing',
+					verbose: true
 				},
 				files: {
 					src: ['.']
@@ -40,9 +41,11 @@ module.exports = function(grunt){
 		},
 
 		gitpush: {
-			your_target: {
+			gbc: {
 				options: {
-					// Target-specific options go here.
+					remote: 'origin',
+					branch: 'master',
+					verbose: true
 				}
 			}
 		},
