@@ -28,6 +28,25 @@ module.exports = function(grunt){
 		    }
 		},
 
+		gitcommit: {
+			your_target: {
+				options: {
+					message: 'Testing'
+				},
+				files: {
+					src: ['.']
+				}
+			}
+		},
+
+		gitpush: {
+			your_target: {
+				options: {
+					// Target-specific options go here.
+				}
+			}
+		},
+
 		sass: {
             dev: {
                 options: { 
@@ -55,6 +74,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-htmlhint');
+	grunt.loadNpmTasks('grunt-git');
 
 	//require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 

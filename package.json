@@ -13,6 +13,7 @@
     "grunt-autoprefixer": "~0.7.2",
     "grunt-pixrem": "~0.1.1",
     "grunt-htmlhint": "*",
+    "grunt-git": "^0.2.7",
     "matchdep": "*"
   }
 }
