@@ -31,7 +31,7 @@ module.exports = function(grunt){
 		gitcommit: {
 			gbc: {
 				options: {
-					message: 'Testing',
+					message: grunt.option('m'),
 					verbose: true
 				},
 				files: {
